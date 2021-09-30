@@ -1,3 +1,12 @@
+Input:
+L1 = 1->2->3->4->5->6
+L2 = 11->12->13
+X = 15
+Output: 3
+Explanation: There are 3 pairs that
+add up to 15 : (4,11) , (3,12) and (2,13)
+
+
 class Solution{
   public:
     // your task is to complete this function

@@ -1,0 +1,17 @@
+class Solution
+{
+public:
+    int trailingZeroes(int n)
+    {
+        // Write Your Code here
+        int sum=0;
+        while(n!=0)
+        {
+            int i=1;
+            n=n/pow(5,i);
+            sum=sum+n;
+            i++;
+        }
+        return sum;
+    }
+};

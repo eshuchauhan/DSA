@@ -4,13 +4,11 @@ using namespace std;
 vector<int>adj[100001];
 int vis[100001]={0};
 
-void bfs()
+void bfs(ll n,ll m)
 {
-    ll n,m,x,y,i,j;
-    ll no_of_nodes,edges;
-    cin>>no_of_nodes>>edges;
+    ll x,y,i,j;
     
-    for(i=0;i<edges;i++)
+    for(i=0;i<m;i++)
     {
         cin>>x>>y;
         adj[x].push_back(y);
@@ -19,7 +17,7 @@ void bfs()
     
     vector<ll>v;
     
-    for(i=0;i<no_of_nodes;i++)
+    for(i=0;i<n;i++)
     {
         if(vis[i]==0)
         {
@@ -51,8 +49,9 @@ void bfs()
     }
     cout<<endl;
 }
-
 int main()
 {
-    bfs();
+    ll no_of_nodes,edges;
+    cin>>no_of_nodes>>edges;
+    bfs(no_of_nodes,edges);
 }

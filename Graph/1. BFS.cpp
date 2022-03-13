@@ -4,7 +4,7 @@ using namespace std;
 vector<int>adj[100001];
 int vis[100001]={0};
 
-int main()
+void bfs()
 {
     ll n,m,x,y,i,j;
     ll no_of_nodes,edges;
@@ -50,4 +50,9 @@ int main()
         cout<<it<<" ";
     }
     cout<<endl;
+}
+
+int main()
+{
+    bfs();
 }

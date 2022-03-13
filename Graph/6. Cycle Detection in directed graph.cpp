@@ -22,6 +22,7 @@ bool dfs(int node)
             return true;
         }
     }
+    dfsvis[node]=0;
     return false;
 }
 
